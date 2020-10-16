@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<beans>
+
+    <bean id="userDaoImpl" class="com.yj.dao.UserDaoImpl"></bean>
+
+    <bean id="userService" class="com.yj.service.UserService">
+        <property name="userDaoImpl" ref="userDaoImpl"/>
+    </bean>
+
+
+
+</beans>
